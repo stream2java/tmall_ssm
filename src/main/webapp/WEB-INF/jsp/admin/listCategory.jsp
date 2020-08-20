@@ -9,9 +9,9 @@
     $(function(){
 
         $("#addForm").submit(function(){
-            if(!checkEmpty("name","分类名称"))
+            if(!checkEmpty("name","分類名稱"))
                 return false;
-            if(!checkEmpty("categoryPic","分类图片"))
+            if(!checkEmpty("categoryPic","分類圖片"))
                 return false;
             return true;
         });
@@ -19,10 +19,10 @@
 
 </script>
 
-<title>分类管理</title>
+<title>分類管理</title>
 
 <div class="workingArea">
-    <h1 class="label label-info" >分类管理</h1>
+    <h1 class="label label-info" >分類管理</h1>
     <br>
     <br>
 
@@ -31,12 +31,12 @@
             <thead>
             <tr class="success">
                 <th>ID</th>
-                <th>图片</th>
-                <th>分类名称</th>
-                <th>属性管理</th>
-                <th>产品管理</th>
-                <th>编辑</th>
-                <th>删除</th>
+                <th>圖片</th>
+                <th>分類名稱</th>
+                <th>屬性管理</th>
+                <th>產品管理</th>
+                <th>編輯</th>
+                <th>刪除</th>
             </tr>
             </thead>
             <tbody>
@@ -59,20 +59,20 @@
     </div>
 
     <div class="pageDiv">
-        <%//@include file="../include/admin/adminPage.jsp" %>
+        <%@include file="../include/admin/adminPage.jsp" %>
     </div>
 
     <div class="panel panel-warning addDiv">
-        <div class="panel-heading">新增分类</div>
+        <div class="panel-heading">新增分類</div>
         <div class="panel-body">
             <form method="post" id="addForm" action="admin_category_add" enctype="multipart/form-data">
                 <table class="addTable">
                     <tr>
-                        <td>分类名称</td>
+                        <td>分類名稱</td>
                         <td><input  id="name" name="name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>分类圖片</td>
+                        <td>分類圖片</td>
                         <td>
                             <input id="categoryPic" accept="image/*" type="file" name="image" />
                         </td>
@@ -89,4 +89,5 @@
 
 </div>
 
-<%@include file="../include/admin/adminFooter.jsp"%>
+<%@include file="../include/admin/adminFooter.jsp"%>5
+
