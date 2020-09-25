@@ -1,4 +1,3 @@
-
 package com.stream.tmall.pojo;
 
 public class Category {
